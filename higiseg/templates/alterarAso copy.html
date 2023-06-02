@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Higiseg APP</title>
+    </head>
+    <body>
+        <h1>Lista de asos</h1>
+        <ul>Trabalhar a distribuição de link dos modais de mostrar pdf e fazer download no frontend
+            {% if aso %}
+            <li>{{aso.id}} {{aso.funcionario}} {{aso.caminho}} {{aso.data}} {{aso.cliente}}</li>
+            {% endif %}
+            <form action="" method="post" enctype="multipart/form-data">
+                {% csrf_token %}
+                <input type="file" name="file">
+                <input type="submit" value="Enviar">
+            </form>
+        </ul>
+    </body>
+
+</html>

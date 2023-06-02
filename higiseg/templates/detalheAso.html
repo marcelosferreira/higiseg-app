@@ -1,0 +1,62 @@
+{% extends 'index.html' %}
+{% block content %}
+<!-- Voltar-->
+<div class="fixed-top py-1" id="voltar">
+    <div class="container px-4 px-lg-5">
+        <a href="{% url 'lista_asos' %}"><span class="icon"></span>Voltar</a>
+    </div>
+</div>
+<!-- Lists-->
+<section class="lists" style="height: 100vh; position: absolute;">
+    <div class="container px-4 px-lg-5 h-400">
+        <div class="row gx-4 gx-lg-5 h-100 align-items justify-content">
+            <div class="col-lg-8 align-self-start">
+                <p>
+                <h2 class="text-white font-weight-bold text-center">Olá, o seu ASO está disponível!</h2>
+                </p>
+                <h3 class="text-white font-weight-bold text-center">Faça o download ou compartilhe!
+                </h3>
+            </div>
+            
+            <div class="col-lg-8 text-center">
+                <div class="item-lista">
+                    <div class="container-itens">
+                        <button class="item-botao-read" type="button" data-bs-toggle="modal" data-bs-target="#modal-download">
+                            <h5>Visualizar</h5>
+                        </button>
+                        <a href="{% url 'download_aso' aso.id %}" class="item-botao-download">
+                            <h5>Download</h5>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-8 text-center">
+                <p>
+                <h3 class="text-white font-weight-bold text-center">Ultima atualização: {{aso.data}}!
+                </h3></p>
+                <p><button class="btn btn-primary-b btn-int" id="submitButton" type="submit">Logout</button></p>
+                <p><button class="btn btn-primary-b btn-int" id="submitButton" type="submit">Reportar Problema</button></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="modal-download" tabindex="-1" role="dialog" aria-labelledby="modal-aso"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-aso" id="modal-aso">{{aso.funcionario}}</h5>
+                    <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <iframe src="{{aso.caminho}}" height="600px" width="100%"></iframe>
+                                   
+                </div>
+                <div class="modal-footer"><button class="btn btn-secondary" type="button"
+                        data-bs-dismiss="modal">Fechar</button><a href="{% url 'download_aso' aso.id %}" class="btn btn-primary">Download</a></div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

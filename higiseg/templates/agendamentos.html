@@ -1,0 +1,100 @@
+{% extends 'index.html' %}
+{% block content %}
+<!-- Voltar-->
+<div class="fixed-top py-1" id="voltar">
+    <div class="container px-4 px-lg-5">
+        <a href="{% url 'login' %}"><span class="icon"></span>Voltar</a>
+    </div>
+</div>
+<!-- Lists-->
+<section class="lists">
+    <div class="container px-4 px-lg-5 h-100">
+        <div class="row gx-4 gx-lg-5 h-100 align-items justify-content">
+            <div class="col-lg-8 align-self-start">
+                <p>
+                <h2 class="text-white font-weight-bold text-center">Olá, seja muito bem vindo!</h2>
+                </p>
+                <h3 class="text-white font-weight-bold text-center">Abaixo estão os funcionários com horário agendado!
+                </h3>
+                {% if messages %}
+                {% for message in messages %}
+                <script>
+                    // Função para ativar o modal ao carregar a página
+                    window.addEventListener('DOMContentLoaded', function () {
+                        var modal = document.getElementById('btnSucesso');
+                        modal.click()
+                        modal.remove()
+                    });
+                </script>
+                <button id="btnSucesso" type="button" data-bs-toggle="modal" data-bs-target="#modalSucesso" hidden>&nbsp;</button>
+                
+                <!-- Modal -->
+                <div class="modal fade" id="modalSucesso" tabindex="-1" role="dialog" aria-labelledby="modalSucessoLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="modalSucessoTitle">{{message}}</h5>
+                                <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-footer"><button class="btn btn-success" type="button" data-bs-dismiss="modal">Ok</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+                {% endif %}
+            </div>
+            {% if user %}
+            {% for a in agendamentos %}
+                <div class="col-lg-8 text-center">
+                    <a href="{% url 'alterar_agendamento' a.id %}" class="item-lista">
+                        <div class="item-lista-circ">
+                            <div class="item-lista-circ-c"></div>
+                            <div class="item-lista-circ-b"></div>
+                        </div>
+                        <div class="item-lista-ret">
+                            <div class="item-lista-ret-tit" id="func">{{ a.funcionarioAgendamento }}</div>
+                            <div class="item-lista-ret-dt">Data: {{ a.dataAgendamento|date:"d/m/Y H:i" }}</div>
+                            <div class="item-lista-ret-arrow">&lt;</div>
+                        </div>
+                    </a>
+                    <button class="btn btn-danger" type="button" data-bs-toggle="modal" data-bs-target="#del{{a.id}}">Excluir Agendamento</button>
+                </div>
+                    
+                    <!-- Modal -->
+                    <div class="modal fade" id="del{{a.id}}" tabindex="-1" role="dialog" aria-labelledby="delAso" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="delAso">Tem certeza que deseja excluir o Agendamento?</h5>
+                                    <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-footer"><button class="btn btn-secondary" type="button"
+                                        data-bs-dismiss="modal">Cancelar</button><a class="btn btn-danger"
+                                        href="{% url 'delete_agendamento' a.id %}">Confirmar</a></div>
+                            </div>
+                        </div>
+                    </div>
+                   
+            {% endfor %}
+            {% else %}
+            {% for a in agendamentos %}
+            <div class="col-lg-8 text-center">
+                <a href="#" class="item-lista">
+                    <div class="item-lista-circ">
+                        <div class="item-lista-circ-c"></div>
+                        <div class="item-lista-circ-b"></div>
+                    </div>
+                    <div class="item-lista-ret">
+                        <div class="item-lista-ret-tit" id="func">{{ a.funcionarioAgendamento }}</div>
+                        <div class="item-lista-ret-dt">Data: {{ a.dataAgendamento|date:"d/m/Y H:i" }}</div>
+                    </div>
+                </a>
+            </div>
+            {% endfor %}
+            {% endif %}
+        </div>
+    </div>
+</section>
+{% endblock %}

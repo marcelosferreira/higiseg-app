@@ -1,0 +1,17 @@
+{% extends 'index.html' %}
+{% block content %} 
+    <!-- Home-->
+    <header class="iniHome">
+        <div class="container px-4 px-lg-5 h-100">
+            <div class="row gx-4 gx-lg-5 h-100 align-items justify-content">
+                <div class="col-lg-8 align-self-start">
+                    <h1 class="text-white font-weight-bold">Sejam muito bem vindos ao app da Higiseg!</h1>
+                </div>
+                <div class="col-lg-8 align-self-auto text-center">
+                    <a class="btn btn-primary btn-m" href="{% url 'login' %}">Efetuar Login</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+{% endblock %}

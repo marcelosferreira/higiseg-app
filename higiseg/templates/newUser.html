@@ -1,0 +1,45 @@
+{% extends 'index.html' %}
+{% block content %}
+    <!-- Home-->
+    <header class="iniHome">
+        <div class="container px-4 px-lg-5 h-100">
+            <div class="row gx-4 gx-lg-5 h-100 align-items justify-content">
+                <div class="col-lg-8 align-self-start">
+                    <h1 class="text-white font-weight-bold">Faça aqui seu primeiro cadastro no App!</h1>
+                </div>
+                <div class="col-lg-8 col-xl-6 text-center">
+                    <form id="contactForm" method="POST" action="">
+                        {% csrf_token %}
+                        <div class="form-floating mb-3">
+                            <input class="form-control" type="text" name="username" id="username" placeholder="" required>
+                            <label for="name">Login do portal Higiseg</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input class="form-control" type="password" name="sitePassword" id="sitePassword" placeholder="" required>
+                            <label for="name">Senha no portal Higiseg</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input class="form-control" type="password" name="password" id="password" placeholder="" required>
+                            <label for="name">Senha para o App</label>
+                        </div>
+                        {% if messages %}
+                            {% for message in messages %}
+                            {% if message.tags %}
+                            {% if message.tags == 'error' %}
+                                <div class="text-center text-danger mb-3">{{ message }}</div>
+                            {% elif message.tags == 'success' %}
+                                <div class="text-center text-success mb-3">{{ message }}</div>
+                            {% endif %}
+                            {% endif %}
+                            {% endfor %}
+                        {% endif %}
+                        <div class="d-grid"><button class="btn btn-primary btn-xl" id="submitButton" type="submit">Enviar</button>
+                        </div>
+                    </form>
+                    <a href="">Reportar Problema</a><br>
+                </div>
+            </div>
+        </div>
+    </header>
+
+{% endblock %}
