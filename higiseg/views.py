@@ -31,19 +31,22 @@ def base(request):
 #### CONTROLE DE USUÁRIOS
 ##
 def login(request): #d
-    if request.method == 'POST':
-        username = request.POST['username']
-        password = request.POST['password']
-        user = authenticate(request, username=username, password=password)
-        if user is not None:
-            auth_login(request, user)
-            if user.is_staff:
-                return redirect('lista_empresas_admin')
+    if request.user.is_authenticated:
+        return redirect('base')
+    else:
+        if request.method == 'POST':
+            username = request.POST['username']
+            password = request.POST['password']
+            user = authenticate(request, username=username, password=password)
+            if user is not None:
+                auth_login(request, user)
+                if user.is_staff:
+                    return redirect('lista_empresas_admin')
+                else:
+                    return redirect('lista_asos')
             else:
-                return redirect('lista_asos')
-        else:
-            logger.error('Ocorreu um erro: Senha e/ou user inválido')
-            messages.error(request, 'Usuário ou senha inválidos.') #FALTA template modais msg
+                logger.error('Ocorreu um erro: Senha e/ou user inválido')
+                messages.error(request, 'Usuário ou senha inválidos.') #FALTA template modais msg
 
     return render(request, 'login.html')
 
