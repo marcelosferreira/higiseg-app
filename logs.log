@@ -110,3 +110,4 @@ Traceback (most recent call last):
 django.urls.exceptions.NoReverseMatch: Reverse for 'lista_asos_admin' with no arguments not found. 1 pattern(s) tried: ['listaAsosAdmin/(?P<asoId>[0-9]+)\\Z']
 /home/marcelo/Documentos/app/apphigiseg/higiseg/views.py changed, reloading.
 Watching for file changes with StatReloader
+Watching for file changes with StatReloader
