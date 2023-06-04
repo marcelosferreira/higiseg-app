@@ -19,6 +19,7 @@ from .models import Agendamento, Funcionario, Item, User, ASO, Agendamento, Clie
 from .forms import AgendamentoForm, ItemForm
 from . import utils
 from django.db import connections
+from django.core.mail import send_mail
 
 logger = logging.getLogger('APPHIGISEG')
 ##
@@ -29,6 +30,29 @@ def base(request):
 
 def quemSomos(request):
     return render(request, 'quemSomos.html')
+
+def servicos(request):
+    return render(request, 'servicos.html')
+
+def contato(request):
+    if request.method == 'POST':
+        try:
+            nome = request.POST['nome']
+            email = request.POST['email']
+            mensagem = request.POST['mensagem']
+            send_mail(
+                "Contato do Site:",
+                f"Nome: {nome}\nEmail: {email}\n\n{mensagem}",
+                email,
+                ['destinatario@example.com'],
+                fail_silently=False,
+            )
+            messages.success(request, 'Mensagem enviada com sucesso.')
+        except Exception as e:
+            logger.error(f"users: Ocorreu um erro: {str(e)}")
+            messages.error(request, 'Mensagem não enviada, entre em contato com o suporte.')
+    
+    return render(request, 'contato.html')
 
 ##
 #### CONTROLE DE USUÁRIOS

@@ -142,3 +142,113 @@ django.template.exceptions.TemplateDoesNotExist: quemsomos.html
 /home/marcelo/Documentos/app/apphigiseg/higiseg/views.py changed, reloading.
 Watching for file changes with StatReloader
 Not Found: /quemSomos/assets/favicon.ico
+Watching for file changes with StatReloader
+/home/marcelo/Documentos/app/apphigiseg/higiseg/urls.py changed, reloading.
+Watching for file changes with StatReloader
+/home/marcelo/Documentos/app/apphigiseg/higiseg/views.py changed, reloading.
+Watching for file changes with StatReloader
+Not Found: /servicos/assets/favicon.ico
+Internal Server Error: /servicos/
+Traceback (most recent call last):
+  File "/home/marcelo/.local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/marcelo/.local/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/marcelo/Documentos/app/apphigiseg/higiseg/views.py", line 34, in servicos
+    return render(request, 'servicos.html')
+  File "/home/marcelo/.local/lib/python3.8/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/marcelo/.local/lib/python3.8/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/marcelo/.local/lib/python3.8/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/marcelo/.local/lib/python3.8/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/home/marcelo/.local/lib/python3.8/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/marcelo/.local/lib/python3.8/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/marcelo/.local/lib/python3.8/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/marcelo/.local/lib/python3.8/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/marcelo/.local/lib/python3.8/site-packages/django/template/loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "/home/marcelo/.local/lib/python3.8/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/marcelo/.local/lib/python3.8/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/marcelo/.local/lib/python3.8/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/marcelo/.local/lib/python3.8/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/marcelo/.local/lib/python3.8/site-packages/django/template/loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "/home/marcelo/.local/lib/python3.8/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/marcelo/.local/lib/python3.8/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/marcelo/.local/lib/python3.8/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/marcelo/.local/lib/python3.8/site-packages/django/template/defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/marcelo/.local/lib/python3.8/site-packages/django/urls/base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/home/marcelo/.local/lib/python3.8/site-packages/django/urls/resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'download_aso' with arguments '('',)' not found. 1 pattern(s) tried: ['downloadAso/(?P<asoId>[0-9]+)\\Z']
+Not Found: /servicos/back()
+/home/marcelo/Documentos/app/apphigiseg/higiseg/urls.py changed, reloading.
+Watching for file changes with StatReloader
+/home/marcelo/Documentos/app/apphigiseg/higiseg/views.py changed, reloading.
+Watching for file changes with StatReloader
+Not Found: /contato/assets/favicon.ico
+/home/marcelo/Documentos/app/apphigiseg/apphigiseg/settings.py changed, reloading.
+Watching for file changes with StatReloader
+/home/marcelo/Documentos/app/apphigiseg/apphigiseg/settings.py changed, reloading.
+Watching for file changes with StatReloader
+/home/marcelo/Documentos/app/apphigiseg/higiseg/views.py changed, reloading.
+Watching for file changes with StatReloader
+/home/marcelo/Documentos/app/apphigiseg/higiseg/views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/marcelo/.local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/marcelo/.local/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/marcelo/Documentos/app/apphigiseg/higiseg/views.py", line 29, in base
+    return render(request, 'home.html')
+  File "/home/marcelo/.local/lib/python3.8/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/marcelo/.local/lib/python3.8/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/marcelo/.local/lib/python3.8/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/marcelo/.local/lib/python3.8/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/home/marcelo/.local/lib/python3.8/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/marcelo/.local/lib/python3.8/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/marcelo/.local/lib/python3.8/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/marcelo/.local/lib/python3.8/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/marcelo/.local/lib/python3.8/site-packages/django/template/loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "/home/marcelo/.local/lib/python3.8/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/marcelo/.local/lib/python3.8/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/marcelo/.local/lib/python3.8/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/marcelo/.local/lib/python3.8/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/marcelo/.local/lib/python3.8/site-packages/django/template/defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/marcelo/.local/lib/python3.8/site-packages/django/urls/base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/home/marcelo/.local/lib/python3.8/site-packages/django/urls/resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'quemSomos' not found. 'quemSomos' is not a valid view function or pattern name.

@@ -11044,6 +11044,66 @@ body {
   background-size: 45%;
   float: right;
 }
+.item-botao-astec {
+  position: relative;
+  height: 150px;
+  width: 150px;
+  box-sizing: border-box;
+  background: #FAFAFD;
+  border-radius: 15px;
+  border: 2px solid #FFFFFF;
+  background-image: url(../assets/icon_pep.png);
+  background-position-x: center;
+  background-position-y: 30%;
+  background-repeat: no-repeat;
+  background-size: 50%;
+  float: left;
+}
+.item-botao-alt {
+  position: relative;
+  height: 150px;
+  width: 150px;
+  box-sizing: border-box;
+  background: #FAFAFD;
+  border-radius: 15px;
+  border: 2px solid #FFFFFF;
+  background-image: url(../assets/icon_alt.png);
+  background-position-x: center;
+  background-position-y: 30%;
+  background-repeat: no-repeat;
+  background-size: 35%;
+  float: left;
+}
+.item-botao-lea {
+  position: relative;
+  height: 150px;
+  width: 150px;
+  box-sizing: border-box;
+  background: #FAFAFD;
+  border-radius: 15px;
+  border: 2px solid #FFFFFF;
+  background-image: url(../assets/icon_lea.png);
+  background-position-x: center;
+  background-position-y: 30%;
+  background-repeat: no-repeat;
+  background-size: 45%;
+  float: left;
+}
+.item-botao-eng {
+  position: relative;
+  height: 150px;
+  width: 150px;
+  box-sizing: border-box;
+  background: #FAFAFD;
+  border-radius: 15px;
+  border: 2px solid #FFFFFF;
+  background-image: url(../assets/icon_eng.png);
+  background-position-x: center;
+  background-position-y: 30%;
+  background-repeat: no-repeat;
+  background-size: 40%;
+  float: left;
+}
 .container-itens a{
   text-decoration: none;
 }
@@ -11259,6 +11319,119 @@ header.iniHome h1, header.iniHome .h1 {
   }
 }
 
+header.iniQuemsomos {
+  padding-top: 7rem; /* FALTA : alterei aqui*/
+  padding-bottom: calc(10rem - 4.5rem);
+  background: linear-gradient(to bottom, rgba(0, 85, 85, 0.6) 0%, rgba(0, 85, 85, 0.6) 100%), url("../assets/img/medical.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+header.iniQuemsomos h1, header.iniQuemsomos .h1 {
+  font-size: 50px; /* FALTA : alterei aqui*/
+}
+@media (min-width: 992px) {
+  header.iniQuemsomos {
+    height: 100vh;
+    min-height: 40rem;
+    padding-top: 4.5rem;
+    padding-bottom: 0;
+  }
+  header.iniQuemsomos p {
+    font-size: 1.15rem;
+  }
+  header.iniQuemsomos h1, header.iniQuemsomos .h1 {
+    font-size: 3rem;
+  }
+}
+@media (min-width: 1200px) {
+  header.iniQuemsomos h1, header.iniQuemsomos .h1 {
+    font-size: 3.5rem;
+  }
+}
+
+header.iniServicos {
+  padding-top: 7rem; /* FALTA : alterei aqui*/
+  padding-bottom: calc(10rem - 4.5rem);
+  background: linear-gradient(to bottom, rgba(0, 85, 85, 0.6) 0%, rgba(0, 85, 85, 0.6) 100%), url("../assets/img/servicos.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+header.iniServicos h1, header.iniServicos .h1 {
+  font-size: 50px; /* FALTA : alterei aqui*/
+}
+@media (min-width: 992px) {
+  header.iniServicos {
+    height: 100vh;
+    min-height: 40rem;
+    padding-top: 4.5rem;
+    padding-bottom: 0;
+  }
+  header.iniServicos p {
+    font-size: 1.15rem;
+  }
+  header.iniServicos h1, header.iniServicos .h1 {
+    font-size: 3rem;
+  }
+}
+@media (min-width: 1200px) {
+  header.iniServicos h1, header.iniServicos .h1 {
+    font-size: 3.5rem;
+  }
+}
+
+header.iniContato {
+  padding-top: 7rem; /* FALTA : alterei aqui*/
+  padding-bottom: calc(10rem - 4.5rem);
+  background: linear-gradient(to bottom, rgba(0, 85, 85, 0.6) 0%, rgba(0, 85, 85, 0.6) 100%), url("../assets/img/contato.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+header.iniContato h1, header.iniContato .h1 {
+  font-size: 50px; /* FALTA : alterei aqui*/
+}
+@media (min-width: 992px) {
+  header.iniContato {
+    height: 100vh;
+    min-height: 40rem;
+    padding-top: 4.5rem;
+    padding-bottom: 0;
+  }
+  header.iniContato p {
+    font-size: 1.15rem;
+  }
+  header.iniContato h1, header.iniContato .h1 {
+    font-size: 3rem;
+  }
+}
+@media (min-width: 1200px) {
+  header.iniContato h1, header.iniContato .h1 {
+    font-size: 3.5rem;
+  }
+}
 /* FALTA : novooooo */
 section.lists {
   padding-top: 7rem; /* FALTA : alterei aqui*/
