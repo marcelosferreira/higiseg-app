@@ -111,3 +111,34 @@ django.urls.exceptions.NoReverseMatch: Reverse for 'lista_asos_admin' with no ar
 /home/marcelo/Documentos/app/apphigiseg/higiseg/views.py changed, reloading.
 Watching for file changes with StatReloader
 Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+/home/marcelo/Documentos/app/apphigiseg/higiseg/views.py changed, reloading.
+Watching for file changes with StatReloader
+/home/marcelo/Documentos/app/apphigiseg/higiseg/urls.py changed, reloading.
+Watching for file changes with StatReloader
+/home/marcelo/Documentos/app/apphigiseg/higiseg/views.py changed, reloading.
+Watching for file changes with StatReloader
+Not Found: /quemSomos/
+/home/marcelo/Documentos/app/apphigiseg/higiseg/urls.py changed, reloading.
+Watching for file changes with StatReloader
+Not Found: /quemSomos/
+/home/marcelo/Documentos/app/apphigiseg/higiseg/urls.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /quemSomos/
+Traceback (most recent call last):
+  File "/home/marcelo/.local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/marcelo/.local/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/marcelo/Documentos/app/apphigiseg/higiseg/views.py", line 31, in quemSomos
+    return render(request, 'quemsomos.html')
+  File "/home/marcelo/.local/lib/python3.8/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/marcelo/.local/lib/python3.8/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/home/marcelo/.local/lib/python3.8/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: quemsomos.html
+/home/marcelo/Documentos/app/apphigiseg/higiseg/views.py changed, reloading.
+Watching for file changes with StatReloader
+Not Found: /quemSomos/assets/favicon.ico

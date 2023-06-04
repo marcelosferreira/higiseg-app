@@ -27,6 +27,9 @@ logger = logging.getLogger('APPHIGISEG')
 def base(request):
     return render(request, 'home.html')
 
+def quemSomos(request):
+    return render(request, 'quemSomos.html')
+
 ##
 #### CONTROLE DE USUÁRIOS
 ##
