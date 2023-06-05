@@ -25,6 +25,9 @@ logger = logging.getLogger('APPHIGISEG')
 ##
 #### INICIO
 ##
+def ini(request):
+    return render(request, 'ini.html')
+
 def base(request):
     return render(request, 'home.html')
 
