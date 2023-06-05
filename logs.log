@@ -417,3 +417,86 @@ Not Found: /listaAgendamentosAdmin/assets/favicon.ico
 Not Found: /quemSomos/assets/favicon.ico
 Not Found: /servicos/assets/favicon.ico
 Not Found: /contato/assets/favicon.ico
+Watching for file changes with StatReloader
+Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/marcelo/.local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/marcelo/.local/lib/python3.8/site-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+  File "/home/marcelo/.local/lib/python3.8/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/marcelo/.local/lib/python3.8/site-packages/django/http/request.py", line 152, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Bad Request: /listaEmpresasAdmin/
+/home/marcelo/Documentos/app/apphigiseg/apphigiseg/settings.py changed, reloading.
+Watching for file changes with StatReloader
+/home/marcelo/Documentos/app/apphigiseg/apphigiseg/urls.py changed, reloading.
+Watching for file changes with StatReloader
+/home/marcelo/Documentos/app/apphigiseg/apphigiseg/urls.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+/home/marcelo/Documentos/app/apphigiseg/apphigiseg/settings.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /home/
+Traceback (most recent call last):
+  File "/home/marcelo/.local/lib/python3.8/site-packages/django/template/base.py", line 505, in parse
+    compile_func = self.tags[command]
+KeyError: 'progressivo_web_app_meta'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/marcelo/.local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/marcelo/.local/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/marcelo/Documentos/app/apphigiseg/higiseg/views.py", line 32, in base
+    return render(request, 'home.html')
+  File "/home/marcelo/.local/lib/python3.8/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/marcelo/.local/lib/python3.8/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/marcelo/.local/lib/python3.8/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/marcelo/.local/lib/python3.8/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/home/marcelo/.local/lib/python3.8/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/marcelo/.local/lib/python3.8/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/marcelo/.local/lib/python3.8/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/marcelo/.local/lib/python3.8/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/marcelo/.local/lib/python3.8/site-packages/django/template/loader_tags.py", line 132, in render
+    compiled_parent = self.get_parent(context)
+  File "/home/marcelo/.local/lib/python3.8/site-packages/django/template/loader_tags.py", line 129, in get_parent
+    return self.find_template(parent, context)
+  File "/home/marcelo/.local/lib/python3.8/site-packages/django/template/loader_tags.py", line 107, in find_template
+    template, origin = context.template.engine.find_template(
+  File "/home/marcelo/.local/lib/python3.8/site-packages/django/template/engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/home/marcelo/.local/lib/python3.8/site-packages/django/template/loaders/cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "/home/marcelo/.local/lib/python3.8/site-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+  File "/home/marcelo/.local/lib/python3.8/site-packages/django/template/base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/home/marcelo/.local/lib/python3.8/site-packages/django/template/base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "/home/marcelo/.local/lib/python3.8/site-packages/django/template/base.py", line 507, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/home/marcelo/.local/lib/python3.8/site-packages/django/template/base.py", line 568, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 5: 'progressivo_web_app_meta'. Did you forget to register or load this tag?
+Not Found: /home/static/images/icon-160x160.png
+/home/marcelo/Documentos/app/apphigiseg/apphigiseg/settings.py changed, reloading.
+Watching for file changes with StatReloader
+/home/marcelo/Documentos/app/apphigiseg/apphigiseg/settings.py changed, reloading.
+Watching for file changes with StatReloader
+Not Found: /home/static/icon-160x160.png
+/home/marcelo/Documentos/app/apphigiseg/apphigiseg/settings.py changed, reloading.
+Watching for file changes with StatReloader
+Not Found: /home/static/assets/icon-160x160.png

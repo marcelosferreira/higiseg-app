@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-nty^=kgcx2%h2a0n@v(u7$m=pl3a4aqf7n4aikq@j9+9ko(1pm
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['marcelosferreira.pythonanywhere.com']
+ALLOWED_HOSTS = ['marcelosferreira.pythonanywhere.com','127.0.0.1']
 
 
 # Application definition
@@ -180,13 +180,13 @@ PWA_APP_START_URL = '/'
 PWA_APP_STATUS_BAR_COLOR = 'default'
 PWA_APP_ICONS = [
     {
-        'src': 'static/images/icon-160x160.png',
+        'src': 'static/assets/icon-160x160.png',
         'sizes': '160x160'
     }
 ]
 PWA_APP_ICONS_APPLE = [
     {
-        'src': 'static/images/icon-160x160.png',
+        'src': 'static/assets/icon-160x160.png',
         'sizes': '160x160'
     }
 ]
