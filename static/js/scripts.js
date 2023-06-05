@@ -52,3 +52,19 @@ window.addEventListener('DOMContentLoaded', event => {
         });
     });
 });
+if (window.navigator.standalone === false) {
+    if (window.matchMedia('(display-mode: standalone)').matches === false) {
+        // O aplicativo não está instalado
+        // Exibir uma notificação solicitando a instalação
+        const installNotification = new Notification('Instale o App PWA', {
+            body: 'Instale nosso aplicativo para ter uma experiência melhor e acesso offline.',
+            icon: '/caminho/para/o/icone.png'
+        });
+
+        // Lidar com a ação do usuário na notificação
+        installNotification.addEventListener('click', function () {
+            // Redirecionar para a página de instalação do aplicativo
+            window.location.href = '/caminho/para/a/pagina/de/instalacao';
+        });
+    }
+}
