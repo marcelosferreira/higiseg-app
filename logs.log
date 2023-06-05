@@ -367,3 +367,53 @@ Not Found: /ini/outra_pagina.html
 Watching for file changes with StatReloader
 Not Found: /home/assets/favicon.ico
 Watching for file changes with StatReloader
+Invalid HTTP_HOST header: 'marcelosferreira.pythonanywhere.com'. You may need to add 'marcelosferreira.pythonanywhere.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/marcelosferreira/.virtualenvs/venvapphigiseg/lib/python3.8/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/marcelosferreira/.virtualenvs/venvapphigiseg/lib/python3.8/site-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+  File "/home/marcelosferreira/.virtualenvs/venvapphigiseg/lib/python3.8/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/marcelosferreira/.virtualenvs/venvapphigiseg/lib/python3.8/site-packages/django/http/request.py", line 152, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'marcelosferreira.pythonanywhere.com'. You may need to add 'marcelosferreira.pythonanywhere.com' to ALLOWED_HOSTS.
+Bad Request: /
+Invalid HTTP_HOST header: 'marcelosferreira.pythonanywhere.com'. You may need to add 'marcelosferreira.pythonanywhere.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/marcelosferreira/.virtualenvs/venvapphigiseg/lib/python3.8/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/marcelosferreira/.virtualenvs/venvapphigiseg/lib/python3.8/site-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+  File "/home/marcelosferreira/.virtualenvs/venvapphigiseg/lib/python3.8/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/marcelosferreira/.virtualenvs/venvapphigiseg/lib/python3.8/site-packages/django/http/request.py", line 152, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'marcelosferreira.pythonanywhere.com'. You may need to add 'marcelosferreira.pythonanywhere.com' to ALLOWED_HOSTS.
+Bad Request: /higiseg-app/admin
+Not Found: /home/assets/favicon.ico
+Not Found: /contato/assets/favicon.ico
+Not Found: /login/assets/favicon.ico
+Not Found: /listaEmpresasAdmin/assets/favicon.ico
+Not Found: /favicon.ico
+Not Found: /home/assets/favicon.ico
+Not Found: /login/assets/favicon.ico
+Ocorreu um erro: Senha e/ou user inválido
+Forbidden (CSRF token from POST incorrect.): /login/
+OSError: write error
+Not Found: /quemSomos/assets/favicon.ico
+Not Found: /contato/assets/favicon.ico
+Not Found: /servicos/assets/favicon.ico
+Not Found: /listaEmpresasAdmin/assets/favicon.ico
+Not Found: /listaAsosAdmin/assets/favicon.ico
+Not Found: /novoAso/assets/favicon.ico
+Not Found: /listaAgendamentosAdmin/assets/favicon.ico
+Not Found: /favicon.ico
+Not Found: /home/assets/favicon.ico
+Not Found: /login/assets/favicon.ico
+Not Found: /listaEmpresasAdmin/assets/favicon.ico
+Not Found: /novoAso/assets/favicon.ico
+Not Found: /listaAgendamentosAdmin/assets/favicon.ico
+Not Found: /quemSomos/assets/favicon.ico
+Not Found: /servicos/assets/favicon.ico
+Not Found: /contato/assets/favicon.ico
