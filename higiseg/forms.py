@@ -1,12 +1,6 @@
 from django import forms
 from django.contrib.auth.forms import AuthenticationForm
-from .models import Item, Funcionario, Agendamento
-
-class ItemForm(forms.ModelForm):
-
-    class Meta:
-        model = Item
-        fields = ('name', 'description', 'price')
+from .models import Funcionario, Agendamento
 
 class LoginForm(AuthenticationForm):
     username = forms.CharField(label='Login:', widget=forms.TextInput(attrs={'class': 'form-control', 'id':'name', 'placeholder': 'Usuario', 'data-sb-validations':'required'}))

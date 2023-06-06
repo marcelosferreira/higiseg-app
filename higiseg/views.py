@@ -15,8 +15,8 @@ from django.contrib import messages
 from django.http import HttpResponse
 from .forms import LoginForm
 from apphigiseg.settings import BASE_DIR, STATIC_URL, STATICFILES_DIRS
-from .models import Agendamento, Funcionario, Item, User, ASO, Agendamento, Cliente_idClienteWeb
-from .forms import AgendamentoForm, ItemForm
+from .models import Agendamento, Funcionario, User, ASO, Agendamento, Cliente_idClienteWeb
+from .forms import AgendamentoForm
 from . import utils
 from django.db import connections
 from django.core.mail import send_mail
@@ -36,6 +36,9 @@ def quemSomos(request):
 
 def servicos(request):
     return render(request, 'servicos.html')
+
+def offline(request):
+    return render(request, 'offline.html')
 
 def contato(request):
     if request.method == 'POST':

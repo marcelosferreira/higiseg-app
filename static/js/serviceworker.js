@@ -4,27 +4,28 @@ self.addEventListener('install', function (event) {
     event.waitUntil(
         caches.open(staticCacheName).then(function (cache) {
             return cache.addAll([
+                '/',
                 '/home/',
                 '/quemSomos/',
-                '/login/',
                 '/servicos/',
-                '/contato/',
+                '/offline/',
             ]);
         })
     );
 });
 
 self.addEventListener('fetch', function (event) {
-    var requestUrl = new URL(event.request.url);
-    if (requestUrl.origin === location.origin) {
-        if ((requestUrl.pathname === '/')) {
-            event.respondWith(caches.match(''));
-            return;
-        }
-    }
     event.respondWith(
-        caches.match(event.request).then(function (response) {
-            return response || fetch(event.request);
+        fetch(event.request).then(function (networkResponse) {
+            return networkResponse;
+        }).catch(function () {
+            return caches.match(event.request).then(function (cachedResponse) {
+                if (cachedResponse) {
+                    return cachedResponse;
+                } else {
+                    return caches.match('/offline/'); // Página offline personalizada
+                }
+            });
         })
     );
 });

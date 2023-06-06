@@ -1,4 +1,6 @@
+{% extends 'index.html' %}
 {% load static %}
+{% block ini %}
     <!-- Home-->
     <style>
     .container {
@@ -9,7 +11,7 @@
 }
 
     .centered-image {
-    max-width: 100%;
+    max-width: 56%;
     max-height: 100%;
 }
     </style>
@@ -25,4 +27,4 @@
         }
         setTimeout(redirecionar, tempoRedirecionamento);
     </script>
-    
+{% endblock %}

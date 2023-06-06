@@ -12,12 +12,18 @@
     <title>Higiseg App</title>
     <!-- Favicon-->
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    
+{% if request.path == '/' %}
+    {% block ini %} {% endblock %}
+{% else %}
+
     <!-- Google fonts-->
     <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic"
         rel="stylesheet" type="text/css" />
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="{% static "css/styles.css" %}" rel="stylesheet">
+
     </head>
 
 <body id="page-top">
@@ -30,7 +36,7 @@
                 aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ms-auto my-2 my-lg-0">
-                    <li class="nav-item"><a class="nav-link {% if request.path == '/' %}active{% endif %}" href="{% url 'base' %}">Início</a></li>
+                    <li class="nav-item"><a class="nav-link {% if request.path == '/home/' %}active{% endif %}" href="{% url 'base' %}">Início</a></li>
                     {% if user.is_authenticated %}
                         {% if user.is_staff %}
                             <li class="nav-item"><a class="nav-link" href="{% url 'logout' %}">Logout</a></li>
@@ -87,3 +93,4 @@
     
 </body>
 </html>
+{% endif %}

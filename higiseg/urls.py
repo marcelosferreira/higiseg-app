@@ -9,6 +9,7 @@ urlpatterns = [
     path('quemSomos/', views.quemSomos, name='quem_somos'),
     path('servicos/', views.servicos, name='servicos'),
     path('contato/', views.contato, name='contato'),
+    path('offline/', views.offline, name='offline'),
 
     path('novo/', views.newUser, name='new_user'), #d
     path('users/', views.users, name='users'), #d

@@ -4,14 +4,6 @@ from signal import SIG_DFL
 from django.db import models
 from django.contrib.auth.models import User
 
-class Item(models.Model):
-    name = models.CharField(max_length=100)
-    description = models.TextField(blank=True)
-    price = models.DecimalField(max_digits=8, decimal_places=2)
-
-    def __str__(self):
-        return self.name
-
 class ASO:
     def __init__(self, id, funcionario, caminho, data, cliente):
         self.id = id

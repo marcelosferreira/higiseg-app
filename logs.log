@@ -516,3 +516,135 @@ Watching for file changes with StatReloader
 Watching for file changes with StatReloader
 /home/marcelo/Documentos/app/apphigiseg/apphigiseg/settings.py changed, reloading.
 Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Not Found: /contato/static/assets/icon-160x160.png
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/marcelo/.local/lib/python3.8/site-packages/django/template/base.py", line 505, in parse
+    compile_func = self.tags[command]
+KeyError: 'static'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/marcelo/.local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/marcelo/.local/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/marcelo/Documentos/app/apphigiseg/higiseg/views.py", line 29, in ini
+    return render(request, 'ini.html')
+  File "/home/marcelo/.local/lib/python3.8/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/marcelo/.local/lib/python3.8/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/home/marcelo/.local/lib/python3.8/site-packages/django/template/loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "/home/marcelo/.local/lib/python3.8/site-packages/django/template/backends/django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/home/marcelo/.local/lib/python3.8/site-packages/django/template/engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "/home/marcelo/.local/lib/python3.8/site-packages/django/template/engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/home/marcelo/.local/lib/python3.8/site-packages/django/template/loaders/cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "/home/marcelo/.local/lib/python3.8/site-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+  File "/home/marcelo/.local/lib/python3.8/site-packages/django/template/base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/home/marcelo/.local/lib/python3.8/site-packages/django/template/base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "/home/marcelo/.local/lib/python3.8/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/home/marcelo/.local/lib/python3.8/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/marcelo/.local/lib/python3.8/site-packages/django/template/loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+  File "/home/marcelo/.local/lib/python3.8/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/home/marcelo/.local/lib/python3.8/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/marcelo/.local/lib/python3.8/site-packages/django/template/loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "/home/marcelo/.local/lib/python3.8/site-packages/django/template/base.py", line 507, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/home/marcelo/.local/lib/python3.8/site-packages/django/template/base.py", line 558, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 19: 'static', expected 'endblock'. Did you forget to register or load this tag?
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/marcelo/.local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/marcelo/.local/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/marcelo/Documentos/app/apphigiseg/higiseg/views.py", line 29, in ini
+    return render(request, 'ini.html')
+  File "/home/marcelo/.local/lib/python3.8/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/marcelo/.local/lib/python3.8/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/marcelo/.local/lib/python3.8/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/marcelo/.local/lib/python3.8/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/home/marcelo/.local/lib/python3.8/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/marcelo/.local/lib/python3.8/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/marcelo/.local/lib/python3.8/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/marcelo/.local/lib/python3.8/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/marcelo/.local/lib/python3.8/site-packages/django/template/loader_tags.py", line 132, in render
+    compiled_parent = self.get_parent(context)
+  File "/home/marcelo/.local/lib/python3.8/site-packages/django/template/loader_tags.py", line 129, in get_parent
+    return self.find_template(parent, context)
+  File "/home/marcelo/.local/lib/python3.8/site-packages/django/template/loader_tags.py", line 107, in find_template
+    template, origin = context.template.engine.find_template(
+  File "/home/marcelo/.local/lib/python3.8/site-packages/django/template/engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/home/marcelo/.local/lib/python3.8/site-packages/django/template/loaders/cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "/home/marcelo/.local/lib/python3.8/site-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+  File "/home/marcelo/.local/lib/python3.8/site-packages/django/template/base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/home/marcelo/.local/lib/python3.8/site-packages/django/template/base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "/home/marcelo/.local/lib/python3.8/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/home/marcelo/.local/lib/python3.8/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/marcelo/.local/lib/python3.8/site-packages/django/template/defaulttags.py", line 967, in do_if
+    nodelist = parser.parse(("endif",))
+  File "/home/marcelo/.local/lib/python3.8/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/home/marcelo/.local/lib/python3.8/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/marcelo/.local/lib/python3.8/site-packages/django/template/loader_tags.py", line 226, in do_block
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: 'block' tag with name 'content' appears more than once
+Not Found: //
+Not Found: //
+/home/marcelo/Documentos/app/apphigiseg/apphigiseg/settings.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Not Found: /listaAsosAdmin/static/assets/icon-160x160.png
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Not Found: /novoAso/static/assets/icon-160x160.png
+/home/marcelo/Documentos/app/apphigiseg/higiseg/urls.py changed, reloading.
+Watching for file changes with StatReloader
+/home/marcelo/Documentos/app/apphigiseg/higiseg/views.py changed, reloading.
+Watching for file changes with StatReloader
+Not Found: //
+Watching for file changes with StatReloader
+Not Found: /listaAsos/static/assets/icon-160x160.png
+Not Found: /detalheAso/static/assets/icon-160x160.png
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+/home/marcelo/Documentos/app/apphigiseg/higiseg/admin.py changed, reloading.
+Watching for file changes with StatReloader
+/home/marcelo/Documentos/app/apphigiseg/higiseg/views.py changed, reloading.
+Watching for file changes with StatReloader
