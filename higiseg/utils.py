@@ -216,3 +216,8 @@ def tratarNomeFuncionario(nome):
             nome = nome[:20] + '...'
 
     return nome
+
+def tratarCaminho(path):
+    path = path.replace("http://", "https://")
+    
+    return path

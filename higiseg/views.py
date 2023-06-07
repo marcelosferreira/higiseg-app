@@ -158,6 +158,7 @@ def detalheAso(request,asoId):
     try:
         user = User.objects.get(pk=request.user.pk)
         aso = utils.detalheAso(user.username, asoId)
+        aso.caminho = utils.tratarCaminho(aso.caminho)
     except Exception as e:
         logger.error(f"detalheAso: Ocorreu um erro: {str(e)}")
                 
