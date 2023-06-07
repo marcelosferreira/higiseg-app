@@ -11394,7 +11394,7 @@ header.iniServicos h1, header.iniServicos .h1 {
   }
 }
 
-header.iniContato {
+section.iniContato {
   padding-top: 7rem; /* FALTA : alterei aqui*/
   padding-bottom: calc(10rem - 4.5rem);
   background: linear-gradient(to bottom, rgba(0, 85, 85, 0.6) 0%, rgba(0, 85, 85, 0.6) 100%), url("../assets/img/contato.png");
@@ -11403,31 +11403,30 @@ header.iniContato {
   background-attachment: scroll;
   background-size: cover;
   height: 100vh;
-  position: fixed;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
 }
-header.iniContato h1, header.iniContato .h1 {
+section.iniContato h1, section.iniContato .h1 {
   font-size: 50px; /* FALTA : alterei aqui*/
 }
 @media (min-width: 992px) {
-  header.iniContato {
+  section.iniContato {
     height: 100vh;
     min-height: 40rem;
     padding-top: 4.5rem;
     padding-bottom: 0;
   }
-  header.iniContato p {
+  section.iniContato p {
     font-size: 1.15rem;
   }
-  header.iniContato h1, header.iniContato .h1 {
+  section.iniContato h1, section.iniContato .h1 {
     font-size: 3rem;
   }
 }
 @media (min-width: 1200px) {
-  header.iniContato h1, header.iniContato .h1 {
+  section.iniContato h1, section.iniContato .h1 {
     font-size: 3.5rem;
   }
 }

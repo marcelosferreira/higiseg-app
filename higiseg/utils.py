@@ -25,8 +25,8 @@ def listarAsos(user):
     id = getUserId(user)
     conn = connections['mysql']
     with conn.cursor() as cursor:
-        #FALTA: query = (f"SELECT id, texto, caminho, data FROM `documento` WHERE `idCliente` = '{id}'")
-        query = (f"SELECT id, texto, caminho, data FROM `documento` WHERE `idCliente` = '13'")
+        query = (f"SELECT id, texto, caminho, data FROM `documento` WHERE `idCliente` = '{id}'")
+        #query = (f"SELECT id, texto, caminho, data FROM `documento` WHERE `idCliente` = '13'")
         cursor.execute(query)
         results = cursor.fetchall()
         lista = []

@@ -7,7 +7,7 @@
     </div>
 </div>
     <!-- Home-->
-    <header class="iniContato">
+    <section class="iniContato">
         <div class="container px-4 px-lg-5 h-100">
             <div class="row gx-4 gx-lg-5 h-75 align-items justify-content">
                 <div class="col-lg-8 align-self-start">
@@ -48,17 +48,17 @@
                         {% csrf_token %}
                         <!-- Nome input-->
                         <div class="form-floating mb-3">
-                            <input class="form-control" id="nome" type="text" required>
+                            <input class="form-control" name="nome" id="nome" type="text" required>
                             <label for="name">Nome</label>
                         </div>
                         <!-- Email input-->
                         <div class="form-floating mb-3">
-                            <input class="form-control" id="email" type="email" required>
+                            <input class="form-control" name="email" id="email" type="email" required>
                             <label for="email">Email</label>
                         </div>
                         <!-- Mensagem input-->
                         <div class="form-floating mb-3">
-                            <textarea class="form-control" id="mensagem" type="text" style="height: 10rem" required></textarea>
+                            <textarea class="form-control" name="mensagem" id="mensagem" type="text" style="height: 10rem" required></textarea>
                             <label for="mensagem">Mensagem</label>
                         </div>
                         
@@ -70,6 +70,6 @@
                 
             </div>
         </div>
-    </header>
+    </section>
 
 {% endblock %}

@@ -90,12 +90,12 @@ LOGGING = {
 }
 
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-EMAIL_HOST = 'smtp.higisegapp.com'
+EMAIL_HOST = 'smtp.higisegssma.com.br'
 EMAIL_PORT = 587
-EMAIL_HOST_USER = 'admin@higisegapp.com'
-EMAIL_HOST_PASSWORD = '123456'
+EMAIL_HOST_USER = 'contatoapp@higisegssma.com.br'
+EMAIL_HOST_PASSWORD = 'teTgn&_%+3B_3rU'
 EMAIL_USE_TLS = True
-DEFAULT_FROM_EMAIL = 'contato@higisegapp.com'
+DEFAULT_FROM_EMAIL = 'contatoapp@higisegssma.com.br'
 
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases

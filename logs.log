@@ -658,3 +658,303 @@ Watching for file changes with StatReloader
 /home/marcelo/Documentos/app/apphigiseg/higiseg/views.py changed, reloading.
 Watching for file changes with StatReloader
 Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+users: Ocorreu um erro: 'nome'
+/home/marcelo/Documentos/app/apphigiseg/apphigiseg/settings.py changed, reloading.
+Watching for file changes with StatReloader
+users: Ocorreu um erro: 'nome'
+users: Ocorreu um erro: 'nome'
+/home/marcelo/Documentos/app/apphigiseg/higiseg/views.py changed, reloading.
+Watching for file changes with StatReloader
+users: Ocorreu um erro: 'nome'
+/home/marcelo/Documentos/app/apphigiseg/higiseg/views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /contato/
+Traceback (most recent call last):
+  File "/home/marcelo/.local/lib/python3.8/site-packages/django/utils/datastructures.py", line 84, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'nome'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/marcelo/.local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/marcelo/.local/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/marcelo/Documentos/app/apphigiseg/higiseg/views.py", line 51, in contato
+    nome = request.POST['nome']
+  File "/home/marcelo/.local/lib/python3.8/site-packages/django/utils/datastructures.py", line 86, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'nome'
+/home/marcelo/Documentos/app/apphigiseg/higiseg/views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /contato/
+Traceback (most recent call last):
+  File "/home/marcelo/.local/lib/python3.8/site-packages/django/utils/datastructures.py", line 84, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'nome'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/marcelo/.local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/marcelo/.local/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/marcelo/Documentos/app/apphigiseg/higiseg/views.py", line 51, in contato
+    nome = request.GET['nome']
+  File "/home/marcelo/.local/lib/python3.8/site-packages/django/utils/datastructures.py", line 86, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'nome'
+/home/marcelo/Documentos/app/apphigiseg/higiseg/views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /contato/
+Traceback (most recent call last):
+  File "/home/marcelo/.local/lib/python3.8/site-packages/django/utils/datastructures.py", line 84, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'nomeUser'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/marcelo/.local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/marcelo/.local/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/marcelo/Documentos/app/apphigiseg/higiseg/views.py", line 51, in contato
+    nome = request.POST['nomeUser']
+  File "/home/marcelo/.local/lib/python3.8/site-packages/django/utils/datastructures.py", line 86, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'nomeUser'
+Internal Server Error: /contato/
+Traceback (most recent call last):
+  File "/home/marcelo/.local/lib/python3.8/site-packages/django/utils/datastructures.py", line 84, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'email'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/marcelo/.local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/marcelo/.local/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/marcelo/Documentos/app/apphigiseg/higiseg/views.py", line 53, in contato
+    email = request.POST['email']
+  File "/home/marcelo/.local/lib/python3.8/site-packages/django/utils/datastructures.py", line 86, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'email'
+/home/marcelo/Documentos/app/apphigiseg/higiseg/views.py changed, reloading.
+Watching for file changes with StatReloader
+/home/marcelo/Documentos/app/apphigiseg/apphigiseg/settings.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /contato/
+Traceback (most recent call last):
+  File "/home/marcelo/.local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/marcelo/.local/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/marcelo/Documentos/app/apphigiseg/higiseg/views.py", line 57, in contato
+    send_mail(
+  File "/home/marcelo/.local/lib/python3.8/site-packages/django/core/mail/__init__.py", line 87, in send_mail
+    return mail.send()
+  File "/home/marcelo/.local/lib/python3.8/site-packages/django/core/mail/message.py", line 298, in send
+    return self.get_connection(fail_silently).send_messages([self])
+  File "/home/marcelo/.local/lib/python3.8/site-packages/django/core/mail/backends/smtp.py", line 124, in send_messages
+    new_conn_created = self.open()
+  File "/home/marcelo/.local/lib/python3.8/site-packages/django/core/mail/backends/smtp.py", line 80, in open
+    self.connection = self.connection_class(
+  File "/home/marcelo/anaconda3/lib/python3.8/smtplib.py", line 253, in __init__
+    (code, msg) = self.connect(host, port)
+  File "/home/marcelo/anaconda3/lib/python3.8/smtplib.py", line 339, in connect
+    self.sock = self._get_socket(host, port, self.timeout)
+  File "/home/marcelo/anaconda3/lib/python3.8/smtplib.py", line 308, in _get_socket
+    return socket.create_connection((host, port), timeout,
+  File "/home/marcelo/anaconda3/lib/python3.8/socket.py", line 787, in create_connection
+    for res in getaddrinfo(host, port, 0, SOCK_STREAM):
+  File "/home/marcelo/anaconda3/lib/python3.8/socket.py", line 918, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -2] Name or service not known
+Watching for file changes with StatReloader
+Internal Server Error: /contato/
+Traceback (most recent call last):
+  File "/home/marcelo/.local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/marcelo/.local/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/marcelo/Documentos/app/apphigiseg/higiseg/views.py", line 57, in contato
+    send_mail(
+  File "/home/marcelo/.local/lib/python3.8/site-packages/django/core/mail/__init__.py", line 87, in send_mail
+    return mail.send()
+  File "/home/marcelo/.local/lib/python3.8/site-packages/django/core/mail/message.py", line 298, in send
+    return self.get_connection(fail_silently).send_messages([self])
+  File "/home/marcelo/.local/lib/python3.8/site-packages/django/core/mail/backends/smtp.py", line 124, in send_messages
+    new_conn_created = self.open()
+  File "/home/marcelo/.local/lib/python3.8/site-packages/django/core/mail/backends/smtp.py", line 80, in open
+    self.connection = self.connection_class(
+  File "/home/marcelo/anaconda3/lib/python3.8/smtplib.py", line 253, in __init__
+    (code, msg) = self.connect(host, port)
+  File "/home/marcelo/anaconda3/lib/python3.8/smtplib.py", line 339, in connect
+    self.sock = self._get_socket(host, port, self.timeout)
+  File "/home/marcelo/anaconda3/lib/python3.8/smtplib.py", line 308, in _get_socket
+    return socket.create_connection((host, port), timeout,
+  File "/home/marcelo/anaconda3/lib/python3.8/socket.py", line 787, in create_connection
+    for res in getaddrinfo(host, port, 0, SOCK_STREAM):
+  File "/home/marcelo/anaconda3/lib/python3.8/socket.py", line 918, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -2] Name or service not known
+/home/marcelo/Documentos/app/apphigiseg/apphigiseg/settings.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /contato/
+Traceback (most recent call last):
+  File "/home/marcelo/.local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/marcelo/.local/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/marcelo/Documentos/app/apphigiseg/higiseg/views.py", line 57, in contato
+    send_mail(
+  File "/home/marcelo/.local/lib/python3.8/site-packages/django/core/mail/__init__.py", line 87, in send_mail
+    return mail.send()
+  File "/home/marcelo/.local/lib/python3.8/site-packages/django/core/mail/message.py", line 298, in send
+    return self.get_connection(fail_silently).send_messages([self])
+  File "/home/marcelo/.local/lib/python3.8/site-packages/django/core/mail/backends/smtp.py", line 131, in send_messages
+    sent = self._send(message)
+  File "/home/marcelo/.local/lib/python3.8/site-packages/django/core/mail/backends/smtp.py", line 149, in _send
+    self.connection.sendmail(
+  File "/home/marcelo/anaconda3/lib/python3.8/smtplib.py", line 885, in sendmail
+    raise SMTPRecipientsRefused(senderrs)
+smtplib.SMTPRecipientsRefused: {'teste@higisegssma.com.br': (453, b'4.7.1 <teste@higisegssma.com.br>: Recipient address rejected: Access Denied')}
+/home/marcelo/Documentos/app/apphigiseg/apphigiseg/settings.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /contato/
+Traceback (most recent call last):
+  File "/home/marcelo/.local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/marcelo/.local/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/marcelo/Documentos/app/apphigiseg/higiseg/views.py", line 57, in contato
+    send_mail(
+  File "/home/marcelo/.local/lib/python3.8/site-packages/django/core/mail/__init__.py", line 87, in send_mail
+    return mail.send()
+  File "/home/marcelo/.local/lib/python3.8/site-packages/django/core/mail/message.py", line 298, in send
+    return self.get_connection(fail_silently).send_messages([self])
+  File "/home/marcelo/.local/lib/python3.8/site-packages/django/core/mail/backends/smtp.py", line 131, in send_messages
+    sent = self._send(message)
+  File "/home/marcelo/.local/lib/python3.8/site-packages/django/core/mail/backends/smtp.py", line 149, in _send
+    self.connection.sendmail(
+  File "/home/marcelo/anaconda3/lib/python3.8/smtplib.py", line 885, in sendmail
+    raise SMTPRecipientsRefused(senderrs)
+smtplib.SMTPRecipientsRefused: {'teste@higisegssma.com.br': (453, b'4.7.1 <teste@higisegssma.com.br>: Recipient address rejected: Access Denied')}
+Internal Server Error: /contato/
+Traceback (most recent call last):
+  File "/home/marcelo/.local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/marcelo/.local/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/marcelo/Documentos/app/apphigiseg/higiseg/views.py", line 57, in contato
+    send_mail(
+  File "/home/marcelo/.local/lib/python3.8/site-packages/django/core/mail/__init__.py", line 87, in send_mail
+    return mail.send()
+  File "/home/marcelo/.local/lib/python3.8/site-packages/django/core/mail/message.py", line 298, in send
+    return self.get_connection(fail_silently).send_messages([self])
+  File "/home/marcelo/.local/lib/python3.8/site-packages/django/core/mail/backends/smtp.py", line 131, in send_messages
+    sent = self._send(message)
+  File "/home/marcelo/.local/lib/python3.8/site-packages/django/core/mail/backends/smtp.py", line 149, in _send
+    self.connection.sendmail(
+  File "/home/marcelo/anaconda3/lib/python3.8/smtplib.py", line 885, in sendmail
+    raise SMTPRecipientsRefused(senderrs)
+smtplib.SMTPRecipientsRefused: {'teste@higisegssma.com.br': (453, b'4.7.1 <teste@higisegssma.com.br>: Recipient address rejected: Access Denied')}
+Internal Server Error: /contato/
+Traceback (most recent call last):
+  File "/home/marcelo/.local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/marcelo/.local/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/marcelo/Documentos/app/apphigiseg/higiseg/views.py", line 57, in contato
+    send_mail(
+  File "/home/marcelo/.local/lib/python3.8/site-packages/django/core/mail/__init__.py", line 87, in send_mail
+    return mail.send()
+  File "/home/marcelo/.local/lib/python3.8/site-packages/django/core/mail/message.py", line 298, in send
+    return self.get_connection(fail_silently).send_messages([self])
+  File "/home/marcelo/.local/lib/python3.8/site-packages/django/core/mail/backends/smtp.py", line 131, in send_messages
+    sent = self._send(message)
+  File "/home/marcelo/.local/lib/python3.8/site-packages/django/core/mail/backends/smtp.py", line 149, in _send
+    self.connection.sendmail(
+  File "/home/marcelo/anaconda3/lib/python3.8/smtplib.py", line 885, in sendmail
+    raise SMTPRecipientsRefused(senderrs)
+smtplib.SMTPRecipientsRefused: {'teste@higisegssma.com.br': (453, b'4.7.1 <teste@higisegssma.com.br>: Recipient address rejected: Access Denied')}
+/home/marcelo/Documentos/app/apphigiseg/apphigiseg/settings.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /contato/
+Traceback (most recent call last):
+  File "/home/marcelo/.local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/marcelo/.local/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/marcelo/Documentos/app/apphigiseg/higiseg/views.py", line 57, in contato
+    send_mail(
+  File "/home/marcelo/.local/lib/python3.8/site-packages/django/core/mail/__init__.py", line 87, in send_mail
+    return mail.send()
+  File "/home/marcelo/.local/lib/python3.8/site-packages/django/core/mail/message.py", line 298, in send
+    return self.get_connection(fail_silently).send_messages([self])
+  File "/home/marcelo/.local/lib/python3.8/site-packages/django/core/mail/backends/smtp.py", line 131, in send_messages
+    sent = self._send(message)
+  File "/home/marcelo/.local/lib/python3.8/site-packages/django/core/mail/backends/smtp.py", line 149, in _send
+    self.connection.sendmail(
+  File "/home/marcelo/anaconda3/lib/python3.8/smtplib.py", line 885, in sendmail
+    raise SMTPRecipientsRefused(senderrs)
+smtplib.SMTPRecipientsRefused: {'teste@higisegssma.com.br': (453, b'4.7.1 <teste@higisegssma.com.br>: Recipient address rejected: Access Denied')}
+/home/marcelo/Documentos/app/apphigiseg/apphigiseg/settings.py changed, reloading.
+Watching for file changes with StatReloader
+/home/marcelo/Documentos/app/apphigiseg/apphigiseg/settings.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /contato/
+Traceback (most recent call last):
+  File "/home/marcelo/.local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/marcelo/.local/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/marcelo/Documentos/app/apphigiseg/higiseg/views.py", line 57, in contato
+    send_mail(
+  File "/home/marcelo/.local/lib/python3.8/site-packages/django/core/mail/__init__.py", line 87, in send_mail
+    return mail.send()
+  File "/home/marcelo/.local/lib/python3.8/site-packages/django/core/mail/message.py", line 298, in send
+    return self.get_connection(fail_silently).send_messages([self])
+  File "/home/marcelo/.local/lib/python3.8/site-packages/django/core/mail/backends/smtp.py", line 131, in send_messages
+    sent = self._send(message)
+  File "/home/marcelo/.local/lib/python3.8/site-packages/django/core/mail/backends/smtp.py", line 149, in _send
+    self.connection.sendmail(
+  File "/home/marcelo/anaconda3/lib/python3.8/smtplib.py", line 885, in sendmail
+    raise SMTPRecipientsRefused(senderrs)
+smtplib.SMTPRecipientsRefused: {'teste@higisegssma.com.br': (450, b'4.1.8 <teste@higisegssma.com.brs>: Sender address rejected: Domain not found')}
+/home/marcelo/Documentos/app/apphigiseg/higiseg/views.py changed, reloading.
+Watching for file changes with StatReloader
+/home/marcelo/Documentos/app/apphigiseg/higiseg/views.py changed, reloading.
+Watching for file changes with StatReloader
+/home/marcelo/Documentos/app/apphigiseg/apphigiseg/settings.py changed, reloading.
+Watching for file changes with StatReloader
+/home/marcelo/Documentos/app/apphigiseg/higiseg/views.py changed, reloading.
+Watching for file changes with StatReloader
+/home/marcelo/Documentos/app/apphigiseg/higiseg/views.py changed, reloading.
+Watching for file changes with StatReloader
+/home/marcelo/Documentos/app/apphigiseg/higiseg/views.py changed, reloading.
+Watching for file changes with StatReloader
+users: Ocorreu um erro: {'teste@higisegssma.com.br': (504, b'5.5.2 <asd>: Sender address rejected: need fully-qualified address')}
+Not Found: /novoAgendamento/static/assets/icon-160x160.png
+users: Ocorreu um erro: {'teste@higisegssma.com.br': (504, b'5.5.2 <asd>: Sender address rejected: need fully-qualified address')}
+users: Ocorreu um erro: {'teste@higisegssma.com.br': (504, b'5.5.2 <asd>: Sender address rejected: need fully-qualified address')}
+users: Ocorreu um erro: {'teste@higisegssma.com.br': (504, b'5.5.2 <asd>: Sender address rejected: need fully-qualified address')}
+/home/marcelo/Documentos/app/apphigiseg/higiseg/views.py changed, reloading.
+Watching for file changes with StatReloader
+/home/marcelo/Documentos/app/apphigiseg/apphigiseg/settings.py changed, reloading.
+Watching for file changes with StatReloader
+/home/marcelo/Documentos/app/apphigiseg/higiseg/views.py changed, reloading.
+Watching for file changes with StatReloader
+users: Ocorreu um erro: {'contatoapp@higisegssma.com.br': (504, b'5.5.2 <tas>: Sender address rejected: need fully-qualified address')}
+/home/marcelo/Documentos/app/apphigiseg/higiseg/views.py changed, reloading.
+Watching for file changes with StatReloader
+/home/marcelo/Documentos/app/apphigiseg/higiseg/utils.py changed, reloading.
+Watching for file changes with StatReloader
+/home/marcelo/Documentos/app/apphigiseg/higiseg/views.py changed, reloading.
+Watching for file changes with StatReloader

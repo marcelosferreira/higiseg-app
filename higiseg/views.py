@@ -24,6 +24,11 @@ from django.core.mail import send_mail
 logger = logging.getLogger('APPHIGISEG')
 ##
 #### INICIO
+
+#inserir todos os funcionarios e clientes na base do django
+#corrigir enviar email, ver uma maneira de fazer funfar #d
+#tirar comentarios #d do codigo
+
 ##
 def ini(request):
     return render(request, 'ini.html')
@@ -44,13 +49,16 @@ def contato(request):
     if request.method == 'POST':
         try:
             nome = request.POST['nome']
+            print(nome)
             email = request.POST['email']
+            print(email)
             mensagem = request.POST['mensagem']
+            print(mensagem)
             send_mail(
                 "Contato do Site:",
                 f"Nome: {nome}\nEmail: {email}\n\n{mensagem}",
-                email,
-                ['destinatario@example.com'],
+                'contatoapp@higisegssma.com.br',
+                ['contatoapp@higisegssma.com.br'],
                 fail_silently=False,
             )
             messages.success(request, 'Mensagem enviada com sucesso.')
