@@ -28,6 +28,7 @@ logger = logging.getLogger('APPHIGISEG')
 #inserir todos os funcionarios e clientes na base do django
 #corrigir enviar email, ver uma maneira de fazer funfar #d
 #tirar comentarios #d do codigo
+#retornar as listas por data ou ordem alfabetica
 
 ##
 def ini(request):
@@ -71,7 +72,7 @@ def contato(request):
 ##
 #### CONTROLE DE USUÁRIOS
 ##
-def login(request): #d
+def login(request):
     if request.user.is_authenticated:
         return redirect('base')
     else:
@@ -87,37 +88,33 @@ def login(request): #d
                     return redirect('lista_asos')
             else:
                 logger.error('Ocorreu um erro: Senha e/ou user inválido')
-                messages.error(request, 'Usuário ou senha inválidos.') #FALTA template modais msg
+                messages.error(request, 'Usuário ou senha inválidos.')
 
     return render(request, 'login.html')
 
-def newUser(request): #d
+def newUser(request):
     if request.method=='POST':
         user = request.POST['username']
         sitePassword = request.POST['sitePassword']
         password = request.POST['password']
         try:
             usuario = User.objects.get(username = user)
-            messages.error(request, 'Usuário já cadastrado no sistema.') #FALTA template modais msg
+            messages.error(request, 'Usuário já cadastrado no sistema.')
         except:
             if(utils.userSiteValidation(user, sitePassword)):
                 try:
                     id = utils.getUserId(user)
                     u = User.objects.create_user(user, None, password)
                     c = Cliente_idClienteWeb.objects.create(userCliente = u, nomeCliente = user, idClienteWeb = id)
-                    messages.success(request, 'Usuário criado com sucesso.') #FALTA template modais msg
+                    messages.success(request, 'Usuário criado com sucesso.')
                 except:
                     logger.error(f'Falha na tentativa de novo cadastro no sistema - User: {user}')
-                    messages.error(request, 'Cadastrado não realizado. Entre em contato com o suporte!') #FALTA template modais msg
+                    messages.error(request, 'Cadastrado não realizado. Entre em contato com o suporte!')
             else:
                 logger.error(f'Falha na tentativa de novo cadastro no sistema - User Id: {user}')
-                messages.error(request, 'Usuário e/ou senha do portal incorretos. Entre em contato com o suporte!') #FALTA template modais msg
+                messages.error(request, 'Usuário e/ou senha do portal incorretos. Entre em contato com o suporte!')
 
     return render(request, 'newUser.html')
-
-def esqueciSenha(request):
-    #FALTA: tudo
-    return (request)
 
 @login_required
 @staff_member_required
@@ -129,7 +126,7 @@ def users(request):
 
     return render(request, 'users.html', {'users': users})
 
-@login_required #d
+@login_required
 @staff_member_required
 def deleteUser(request, userId):
     try:
@@ -149,7 +146,7 @@ def deleteUser(request, userId):
 ##
 #### CONTROLE DE ASOS
 ##
-@login_required #d
+@login_required
 def listaAsos(request):
     try:
         user = get_object_or_404(User, pk=request.user.pk)
@@ -161,7 +158,7 @@ def listaAsos(request):
         
     return render(request, 'listaAsos.html', {'asos': asos})
 
-@login_required #d
+@login_required
 def detalheAso(request,asoId):
     try:
         user = User.objects.get(pk=request.user.pk)
@@ -172,7 +169,7 @@ def detalheAso(request,asoId):
                 
     return render(request, 'detalheAso.html', {'aso': aso})
 
-@login_required #d
+@login_required
 def downloadAso(request, asoId):
     try:
         user = User.objects.get(pk=request.user.pk)
@@ -188,7 +185,7 @@ def downloadAso(request, asoId):
     return response
 
 @login_required
-@staff_member_required #d
+@staff_member_required
 def listaEmpresasAdmin(request):
     try:
         user = User.objects.get(pk=request.user.pk)
@@ -200,7 +197,7 @@ def listaEmpresasAdmin(request):
 
 @login_required
 @staff_member_required
-def listaAsosAdmin(request,asoId): #d
+def listaAsosAdmin(request,asoId):
     try:
         user = User.objects.get(pk=request.user.pk)
         asos = utils.listarTodosAsos(user.username,asoId)
@@ -215,7 +212,7 @@ def listaAsosAdmin(request,asoId): #d
 
 @login_required
 @staff_member_required
-def alterarAso(request, asoId): #d
+def alterarAso(request, asoId):
     user = User.objects.get(pk=request.user.pk)
     aso = utils.detalheAsoAdmin(asoId)
     if request.method == 'POST':
@@ -238,7 +235,7 @@ def alterarAso(request, asoId): #d
 
 @login_required
 @staff_member_required
-def novoAso(request):   #d
+def novoAso(request): 
     user = User.objects.get(pk=request.user.pk)
     clientes = utils.listarClientes()
     if request.method == 'POST':
@@ -262,7 +259,7 @@ def novoAso(request):   #d
 
 @login_required
 @staff_member_required
-def deleteAso(request, asoId): #d
+def deleteAso(request, asoId):
     try:
         user = User.objects.get(pk=request.user.pk)
         utils.deleteAso(asoId)
@@ -276,7 +273,7 @@ def deleteAso(request, asoId): #d
 #### CONTROLE DE AGENDAMENTOS
 ##
 @login_required
-def listaAgendamentos(request): #d
+def listaAgendamentos(request):
     try:
         user = User.objects.get(pk=request.user.pk)
         agendamentos = Agendamento.objects.filter(funcionarioAgendamento__userClienteFuncionario=user)
@@ -286,7 +283,7 @@ def listaAgendamentos(request): #d
 
 @login_required
 @staff_member_required
-def novoAgendamento(request): #d
+def novoAgendamento(request):
     try:
         if request.method == "POST":
             form = AgendamentoForm(request.POST)
@@ -306,7 +303,7 @@ def novoAgendamento(request): #d
 
 @login_required
 @staff_member_required
-def listaAgendamentosAdmin(request): #d
+def listaAgendamentosAdmin(request):
     try:
         user = User.objects.get(pk=request.user.pk)
         agendamentos = Agendamento.objects.all
@@ -317,7 +314,7 @@ def listaAgendamentosAdmin(request): #d
 
 @login_required
 @staff_member_required
-def alterarAgendamento(request, agendamentoId): #d
+def alterarAgendamento(request, agendamentoId):
     try:
         agendamento = get_object_or_404(Agendamento, id=agendamentoId)
         if request.method == 'POST':
@@ -336,7 +333,7 @@ def alterarAgendamento(request, agendamentoId): #d
 
 @login_required
 @staff_member_required
-def deleteAgendamento(request, agendamentoId): #d
+def deleteAgendamento(request, agendamentoId):
     try:
         agendamento = get_object_or_404(Agendamento, pk=agendamentoId)
         agendamento.delete()

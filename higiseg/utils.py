@@ -55,7 +55,7 @@ def detalheAso(user,id):
     conn = connections['mysql']
     idCliente = getUserId(user)
     with conn.cursor() as cursor:
-        #FALTA query = (f"SELECT id, texto, caminho, data FROM `documento` WHERE `id` = '{id} AND `idCliente` = '{idCliente}'")
+        # query = (f"SELECT id, texto, caminho, data FROM `documento` WHERE `id` = '{id} AND `idCliente` = '{idCliente}'")
         query = (f"SELECT id, texto, caminho, data FROM `documento` WHERE `id` = '{id}'")
         cursor.execute(query)
         result = cursor.fetchone()

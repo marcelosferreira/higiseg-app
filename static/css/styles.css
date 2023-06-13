@@ -10873,7 +10873,7 @@ body {
 }
 
 .btn-m {
-  padding: 1.25rem 2.25rem; /* FALTA: fiz Td novo */
+  padding: 1.25rem 2.25rem;
   font-size: 0.85rem;
   font-weight: 700;
   text-transform: uppercase;
@@ -10883,7 +10883,7 @@ body {
 
 .btn-int {
   width: 100%;
-  padding: 1.25rem; /* FALTA: fiz Td novo */
+  padding: 1.25rem;
   font-size: 0.85rem;
   font-weight: 700;
   text-transform: uppercase;
@@ -10893,7 +10893,7 @@ body {
 
 
 .btn-del {
-  padding: 1.25rem 2.25rem; /* FALTA: fiz Td novo */
+  padding: 1.25rem 2.25rem;
   font-size: 0.85rem;
   font-weight: 700;
   text-transform: uppercase;
@@ -11134,8 +11134,8 @@ hr.divider-light {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
   background-color: #fff;
   transition: background-color 0.2s ease;
-  border-bottom-left-radius: 12px; /* FALTA: Alterei aqui */
-  border-bottom-right-radius: 12px;   /* FALTA: Alterei aqui */
+  border-bottom-left-radius: 12px; 
+  border-bottom-right-radius: 12px;
 }
 #mainNav .navbar-brand {
   font-family: "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -11220,8 +11220,8 @@ hr.divider-light {
   font-family: "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 12px;
   transition: background-color 0.2s ease;
-  border-top-left-radius: 12px; /* FALTA: Alterei aqui */
-  border-top-right-radius: 12px;   /* FALTA: Alterei aqui */
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
 }
 #footer .footbar-brand {
   font-family: "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -11281,7 +11281,7 @@ hr.divider-light {
 }
 
 header.iniHome {
-  padding-top: 7rem; /* FALTA : alterei aqui*/
+  padding-top: 7rem;
   padding-bottom: calc(10rem - 4.5rem);
   background: linear-gradient(to bottom, rgba(0, 85, 85, 0.6) 0%, rgba(0, 85, 85, 0.6) 100%), url("../assets/img/EPI.jpg");
   background-position: center;
@@ -11296,7 +11296,7 @@ header.iniHome {
   bottom: 0;
 }
 header.iniHome h1, header.iniHome .h1 {
-  font-size: 50px; /* FALTA : alterei aqui*/
+  font-size: 50px;
 }
 @media (min-width: 992px) {
   header.iniHome {
@@ -11319,7 +11319,7 @@ header.iniHome h1, header.iniHome .h1 {
 }
 
 header.iniQuemsomos {
-  padding-top: 7rem; /* FALTA : alterei aqui*/
+  padding-top: 7rem;
   padding-bottom: calc(10rem - 4.5rem);
   background: linear-gradient(to bottom, rgba(0, 85, 85, 0.6) 0%, rgba(0, 85, 85, 0.6) 100%), url("../assets/img/medical.png");
   background-position: center;
@@ -11334,7 +11334,7 @@ header.iniQuemsomos {
   bottom: 0;
 }
 header.iniQuemsomos h1, header.iniQuemsomos .h1 {
-  font-size: 50px; /* FALTA : alterei aqui*/
+  font-size: 50px;
 }
 @media (min-width: 992px) {
   header.iniQuemsomos {
@@ -11357,7 +11357,7 @@ header.iniQuemsomos h1, header.iniQuemsomos .h1 {
 }
 
 header.iniServicos {
-  padding-top: 7rem; /* FALTA : alterei aqui*/
+  padding-top: 7rem;
   padding-bottom: calc(10rem - 4.5rem);
   background: linear-gradient(to bottom, rgba(0, 85, 85, 0.6) 0%, rgba(0, 85, 85, 0.6) 100%), url("../assets/img/servicos.png");
   background-position: center;
@@ -11372,7 +11372,7 @@ header.iniServicos {
   bottom: 0;
 }
 header.iniServicos h1, header.iniServicos .h1 {
-  font-size: 50px; /* FALTA : alterei aqui*/
+  font-size: 50px;
 }
 @media (min-width: 992px) {
   header.iniServicos {
@@ -11395,7 +11395,7 @@ header.iniServicos h1, header.iniServicos .h1 {
 }
 
 section.iniContato {
-  padding-top: 7rem; /* FALTA : alterei aqui*/
+  padding-top: 7rem;
   padding-bottom: calc(10rem - 4.5rem);
   background: linear-gradient(to bottom, rgba(0, 85, 85, 0.6) 0%, rgba(0, 85, 85, 0.6) 100%), url("../assets/img/contato.png");
   background-position: center;
@@ -11409,7 +11409,7 @@ section.iniContato {
   bottom: 0;
 }
 section.iniContato h1, section.iniContato .h1 {
-  font-size: 50px; /* FALTA : alterei aqui*/
+  font-size: 50px;
 }
 @media (min-width: 992px) {
   section.iniContato {
@@ -11430,9 +11430,9 @@ section.iniContato h1, section.iniContato .h1 {
     font-size: 3.5rem;
   }
 }
-/* FALTA : novooooo */
+
 section.lists {
-  padding-top: 7rem; /* FALTA : alterei aqui*/
+  padding-top: 7rem;
   padding-bottom: calc(10rem - 4.5rem);
   background-color: #069A8E;
   top: 0;
@@ -11442,13 +11442,13 @@ section.lists {
   min-height: 100%;
 }
 section.lists h1, section.lists .h1 {
-  font-size: 50px; /* FALTA : alterei aqui*/
+  font-size: 50px;
 }
 section.lists h2, section.lists .h2 {
-  font-size: 24px; /* FALTA : alterei aqui*/
+  font-size: 24px;
 }
 section.lists h3, section.lists .h3 {
-  font-size: 16px; /* FALTA : alterei aqui*/
+  font-size: 16px;
   margin-bottom: 7vh;
 }
 @media (min-width: 992px) {
@@ -11469,7 +11469,6 @@ section.lists h3, section.lists .h3 {
     font-size: 3.5rem;
   }
 }
-/* FALTA : novooooo */
 
 #portfolio .container-fluid, #portfolio .container-sm, #portfolio .container-md, #portfolio .container-lg, #portfolio .container-xl, #portfolio .container-xxl {
   max-width: 1920px;

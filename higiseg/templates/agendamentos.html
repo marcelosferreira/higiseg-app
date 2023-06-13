@@ -45,7 +45,7 @@
                 {% endfor %}
                 {% endif %}
             </div>
-            {% if user %}
+            {% if user.is_staff %}
             {% for a in agendamentos %}
                 <div class="col-lg-8 text-center">
                     <a href="{% url 'alterar_agendamento' a.id %}" class="item-lista">

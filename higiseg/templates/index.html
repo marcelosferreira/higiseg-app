@@ -40,6 +40,8 @@
                     {% if user.is_authenticated %}
                         {% if user.is_staff %}
                             <li class="nav-item"><a class="nav-link" href="{% url 'logout' %}">Logout</a></li>
+                            <li class="nav-item"><a class="nav-link {% if request.path == '/users/' %}active{% endif %}"
+                                    href="{% url 'users' %}">Usuários</a></li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" id="navbarDropdownA" href="#!" role="button" data-bs-toggle="dropdown"
                                 aria-haspopup="true" aria-expanded="false">ASOs</a>

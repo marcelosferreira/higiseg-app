@@ -49,12 +49,13 @@
                 <form method="POST">
                     {% csrf_token %}
                     <div class="form-floating mb-3">
-                        <label style="opacity: 0.65; transform: scale(0.85) translateY(-0.5rem) translateX(0.15rem);">Escolha o arquivo abaixo:</label>
+                        <label style="opacity: 0.65; transform: scale(0.85) translateY(-0.5rem) translateX(0.15rem);">Selecione o funcionário:</label>
                         {{form.funcionarioAgendamento}}
                     </div><br>
                     <p style="color: white;">Data atual agendada: {{ agendamento.dataAgendamento|date:"d/m/Y H:i" }}</p>
                     <div class="form-floating mb-3">
-                        <label style="opacity: 0.65; transform: scale(0.85) translateY(-0.5rem) translateX(0.15rem);">Selecione o funcionário:</label>
+                        <label style="opacity: 0.65; transform: scale(0.85) translateY(-0.5rem) translateX(0.15rem);">Selecione
+                        a data do agendamento:</label>
                         {{form.dataAgendamento}}
                     </div>
                     <button class="btn btn-primary btn-xl" style="margin-top: 20px;padding: 1.25rem 43%;" type="submit">Salvar</button>
