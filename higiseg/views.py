@@ -24,12 +24,6 @@ from django.core.mail import send_mail
 logger = logging.getLogger('APPHIGISEG')
 ##
 #### INICIO
-
-#inserir todos os funcionarios e clientes na base do django
-#corrigir enviar email, ver uma maneira de fazer funfar #d
-#tirar comentarios #d do codigo
-#retornar as listas por data ou ordem alfabetica
-
 ##
 def ini(request):
     return render(request, 'ini.html')
